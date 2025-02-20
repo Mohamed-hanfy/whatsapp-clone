@@ -49,4 +49,5 @@ public class Message extends BaseAuditingEntity {
     private String receiverId;
 
 
+    private String mediaFilePath;
 }
