@@ -29,4 +29,14 @@ public class UserMapper {
         user.setLastSeen(LocalDateTime.now());
         return user;
     }
+
+    public Object toUserResponse(User user) {
+        return UserResponse.builder()
+                .firstName(user.getFirstName())
+                .lastName(user.getLastName())
+                .email(user.getEmail())
+                .lastSeen(user.getLastSeen())
+                .isOnline(user.isUserOnline())
+                .build();
+    }
 }
