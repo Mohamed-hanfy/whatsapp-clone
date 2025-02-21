@@ -28,5 +28,6 @@ public class UserSynchronizerFilter extends OncePerRequestFilter {
             JwtAuthenticationToken token = (JwtAuthenticationToken) SecurityContextHolder.getContext().getAuthentication();
             userSynchronizer.synchornizeWithIdp(token.getToken());
         }
+        filterChain.doFilter(request, response);
     }
 }
