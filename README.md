@@ -138,7 +138,3 @@ chmod +x deploy.sh
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://chatgpt.com/c/LICENSE) file for details.
-
----
-
-This repository aims to provide a scalable, secure, and real-time chat application with modern authentication and notification mechanisms.
