@@ -32,6 +32,7 @@ import java.util.List;
 public class User extends BaseAuditingEntity {
     private static final int LAST_ACTIVE_INTERVAL = 5;
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
     private String firstName;
     private String lastName;
